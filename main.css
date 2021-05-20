@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+:root {
+  --bg1: white;
+  --bg2: #c2c5a98f;
+}
+
+/* TEMPORARY */
+iframe {
+  height: 20em;
+  width: auto;
+}
+
+img {
+  width: 7em;
+  height: 7em;
+}
+
+/*  */
+
+body {
+    background-color: var(--bg1);
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+h2 {
+  font-size: 3em;
+  margin-bottom: 0;
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+section.hero {
+  background-color: var(--bg2);
+}
+
+.navbar {
+  background-color: white;
+  padding: 1em;
+}
+
+.logo-text {
+  text-decoration: none;
+  font-family: permanent marker;
+  font-weight: 700;
+  color: #000000;
+  font-size: 1.75em;
+  width: 50%;
+  text-align: center;
+}
+
+.logo-icon {
+  width: 5em;
+  height: 5em;
+
+}
+ #mobile-hamburger {
+   width: 2em;
+   height: 2em;
+ }
+
+ .container-nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content:space-between;
+}
+
+ nav {
+   display: none;
+ }
+
+ #mobile-hamburger {
+   cursor: pointer;
+ }
+
+
+ .phone-num-btn {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(16, 134, 16);
+    border-radius: 3em;
+    padding: .75em;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+ }
+
+.hero-col1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 2em;
+}
+
+#hero-title {
+  padding: .5em;
+  text-align: center;
+}
+
+.hero-col2{
+  line-height: 0;
+}
+
+.hero-pic {
+  width: 100%;
+  height: auto;
+} 
+
+.adventures-title {
+  font-family: permanent marker;
+  font-weight: normal;
+  text-align: center;
+  font-size: 3em;
+  padding-bottom: em;
+  background-color: var(--bg1);
+}
+
+.pricing, .sections, .covid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg2);
+  padding: 2em 0;
+  
+}
+
+.hours, .camping, .map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg1);
+  padding: 2em 0;
+  
+}
+
+#hours-select {
+  width: fit fit-content;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  margin: .5em .5em;
+}
+
+.hours-table, tr, th, td {
+  border: 2px solid rgb(0, 0, 0);
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+.hours-table {
+  width: 20em;
+  
+}
+
+.upper, .lower {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 0;
+}
+
+
+
+#mp {
+  font-weight: bolder;
+}
+
+.lower-btn, .upper-btn {
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(16, 134, 16);
+  border: none;
+  border-radius: 2em;
+  padding: .75em;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.sections h3 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.covid-title, .sections-title {
+  text-align: center;
+}
