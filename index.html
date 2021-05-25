@@ -8,28 +8,30 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
+   
+    <div class="stick">
+        <div class="navbar">
+            <div class="container-nav">
 
-    <div class="navbar">
-        <div class="container-nav">
-
-            <img class="logo-icon" src="media/bro-logo.png" alt="logo">
-            <a class="logo-text" href="#">Broad River Outpost</a>    
-            
-            <img id="mobile-hamburger" iclass="mobile-menu" src="media/Hamburger_icon.svg.png" alt="Hamburger icon">
-
-            <nav>
-                <img id="mobile-exit" class="mobile-menu-exit" src="media/x-mark.png" alt="Close Menu">
-                <ul>
-                    <li> <a href="#">Home</a> </li>
-                    <li> <a href="">Pricing</a> </li>
-                    <li> <a href="">Camping</a> </li>
-                    <li> <a href="">More Info</a> </li>
-                   
-                </ul>
-            </nav>
+                
+                <img class="logo-icon" src="media/bro-logo.png" alt="logo">
+                <a class="logo-text" href="#">Broad River Outpost</a>    
+                
+                <label id="hamlabel" for="toggle">&#9776;</label>
+                
+            </div>
         </div>
 
+        <input type="checkbox" id="toggle"/>
+            
+        <div class="mobile-menu">
+            <a href="#">Home</a>
+            <a href="">Pricing</a>
+            <a href="">Hours</a>
+            <a href="">River Sections</a>
+            <a id="moreinfolink" href="">More Info</a>                  
+        </div>
+        
     </div>
 
     <section class="hero">
@@ -76,11 +78,12 @@
                 <h2 class="hours-title">HOURS</h2>
 
                 <select name="hours-select" id="hours-select">
-                    <option value="March">March</option>
-                    <option value="April">April</option>
-                    <option value="May-August">May-August</option>
-                    <option value="September">September</option>
-                    <option value="October">October</option>
+                    <option id="maropt" value="3">March</option>
+                    <option id="apropt" value="4">April</option>
+                    <option id="mayaugopt" value="5">May-August</option>
+                    <option id="sepopt" value="9">September</option>
+                    <option id="octopt" value="10">October</option>
+                    <option id="offopt" value="11">(Off Season)</option>
                 </select>
 
                 <table class="hours-table">
@@ -90,24 +93,27 @@
                         <th>CLOSE</th>
                     </tr>
                     <tr>
-                        <td>Sat, Sun, <br> &amp; Holiday</td>
+                        <td class="tc1">Sat, Sun, <br> &amp; Holiday</td>
                         <td id="open-wknd">open-wknd</td>
                         <td id="close-wknd">close-wknd</td>
                     </tr>
                     <tr>
-                        <td>Fri</td>
+                        <td class="tc1">Fri</td>
                         <td id="open-fri">open-fri</td>
                         <td id="close-fri">close-fri</td>
                     </tr>
                     <tr>
-                        <td>Mon-Thur</td>
+                        <td class="tc1">Mon-Thur</td>
                         <td id="open-mth">open-mth</td>
                         <td id="close-mth">close-mth</td>
                     </tr>
                 </table>
 
-                <p class="lastputin">Last Put-In: </p>
-                <P class="lastputin" id="putintime"></P>
+                <div class="putindiv">
+                    <p class="lastputin">Last Put-In:</p>
+                    <P class="lastputin" id="putintime"></P>
+                </div>
+
 
             </div>
 
@@ -205,6 +211,7 @@
         
     </section>
 
+    <script src="main.js"></script>
 
 </body>
 </html>
