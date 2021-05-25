@@ -7,7 +7,6 @@
   --bg2: #c2c5a98f;
 }
 
-/* TEMPORARY */
 iframe {
   height: 20em;
   width: auto;
@@ -17,8 +16,6 @@ img {
   width: 7em;
   height: 7em;
 }
-
-/*  */
 
 body {
     background-color: var(--bg1);
@@ -45,35 +42,85 @@ section.hero {
   padding: 1em;
 }
 
+.stick {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid rgb(102, 102, 102);
+}
+
 .logo-text {
   text-decoration: none;
   font-family: permanent marker;
-  font-weight: 700;
+  font-weight: 500;
   color: #000000;
-  font-size: 1.75em;
-  width: 50%;
+  font-size: 1.4em;
+  width: 8em;
   text-align: center;
+  padding-top: .5em;  
 }
 
 .logo-icon {
-  width: 5em;
-  height: 5em;
+  width: 3em;
+  height: 3em;
 
 }
- #mobile-hamburger {
+ #mobile-hamburger, #mobile-exit{
    width: 2em;
    height: 2em;
  }
 
+ #hamlabel {
+   font-size: 2em;
+   line-height: 1em;
+   cursor: pointer;
+   margin-top: .3em;
+      
+ }
+
  .container-nav {
   display: flex;
-  align-items: flex-start;
+  align-items:flex-start;
   justify-content:space-between;
+ }
+
+.mobile-menu {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: rgb(71, 71, 71);
+  line-height: 70px;
+  font-size: larger;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid rgb(102, 102, 102);
+  display: none;
+  position: absolute;
 }
 
- nav {
-   display: none;
- }
+.mobile-menu a {
+  text-decoration: none;
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  display: block;
+  border-bottom: 1px solid rgb(102, 102, 102);
+}
+
+nav {
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .mobile-menu {
+  display:block;
+  
+}
 
  #mobile-hamburger {
    cursor: pointer;
@@ -111,7 +158,14 @@ section.hero {
 .hero-pic {
   width: 100%;
   height: auto;
+  
 } 
+
+.hero {
+  overflow: hidden;
+  background: var(--bg2);
+  margin: 0;
+}
 
 .adventures-title {
   font-family: permanent marker;
@@ -147,17 +201,37 @@ section.hero {
   border-radius: 0.25em;
   padding: 0.25em 0.5em;
   margin: .5em .5em;
+
 }
 
-.hours-table, tr, th, td {
+#hours-select-items {
+  padding: 10px;
+}
+
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.hours-table, th, td {
   border: 2px solid rgb(0, 0, 0);
   border-collapse: collapse;
-  padding: 5px;
+  padding: 3px;
 }
 
 .hours-table {
   width: 20em;
-  
+  height: 15em;
+  text-align: center;
+  table-layout: fixed;
+}
+
+.tc1 {
+  text-align: l;
 }
 
 .upper, .lower {
@@ -192,4 +266,117 @@ section.hero {
 
 .covid-title, .sections-title {
   text-align: center;
+}
+
+.putindiv {
+  display: flex;
+  flex-direction: row;
+  line-height: 0;
+  margin-top: 1em;
+  
+} 
+
+#putintime {
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+.location-map {
+  width: 90%;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .stick {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+  }
+
+  #hamlabel {
+    display: none;
+  }
+
+  .mobile-menu a {
+    color: black;
+    border: 0;
+    display: inline;
+    text-transform: uppercase;
+    padding: 0 .5em;
+    border-right: 1px solid rgb(156, 156, 156);
+  }
+
+  .mobile-menu {
+    all: unset;
+    display: block;
+    flex-direction: row;
+    justify-content: right;
+    width: 90%;
+    text-align: right;
+    
+  }
+
+  .logo-icon {
+    margin-top: 15px;
+  }
+
+  .navbar {
+    padding-right: 0;
+  }
+
+  .mobile-menu a:hover {
+    color: rgb(136, 136, 136);
+  }
+
+  .phone-num-btn:hover {
+    background: rgb(23, 82, 16);
+  }
+
+  #moreinfolink {
+    border: 0;
+  }
+  
+  .hero-col2 {
+    overflow: hidden;
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  .container-hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .hero-col1 {
+    display: flex;
+    align-content: flex-start;
+    width: 50%;
+  }
+
+  .hero-col2 {
+    width: 50%;
+    overflow: hidden;
+
+  }
+
+  .hero-pic {
+    width: 125%;
+  };
+
+  #hero-title {
+    font-size: 2em;
+  }
+
+  #hero-title {
+    text-align: left;
+    margin-left: 1em;
+    margin-top: 4em;
+
+  }
+
 }
