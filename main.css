@@ -286,6 +286,10 @@ nav {
   margin-top: 20px;
 }
 
+.pricing, .hours, .sections, .camping {
+  scroll-margin-top: 6.85em;
+}
+
 @media only screen and (min-width: 768px) {
 
   .stick {
@@ -311,19 +315,13 @@ nav {
   .mobile-menu {
     all: unset;
     display: block;
-    flex-direction: row;
-    justify-content: right;
-    width: 90%;
     text-align: right;
-    
+    width: 480px;
+    white-space: nowrap;
   }
 
   .logo-icon {
-    margin-top: 15px;
-  }
-
-  .navbar {
-    padding-right: 0;
+    margin-top: 10px;
   }
 
   .mobile-menu a:hover {
@@ -341,6 +339,16 @@ nav {
   .hero-col2 {
     overflow: hidden;
     height: 400px;
+  }
+
+
+  .logo-text {
+    width: auto;
+    padding-left: 2em;
+  }
+
+  .pricing, .hours, .sections, .camping {
+    scroll-margin-top: 0;
   }
 }
 
@@ -379,4 +387,68 @@ nav {
 
   }
 
+  .logo-text {
+    width: auto;
+    padding-left: 3em
+  }
+
+  .container-adv {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .adventures-title {
+    width: 100%;
+  }
+
+  .pricing, .hours, .camping, .covid {
+    width: 50%;
+    height: 500px;
+    background: var(--bg1);
+  }
+
+  .pricing, .hours {
+    background: var(--bg2);
+    height: 500px;
+  }
+
+  .camping, .covid {
+    background: var(--bg2);
+  }
+
+  .sections {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: none;
+  }
+
+  .sections-title {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    padding: 1em 0;
+    margin: 0;
+    font-size: 2em;
+  }
+
+
+  .upper, .lower {
+    width: 50%;
+    background: var(--bg1);
+  }
+
+  .map {
+    background: var(--bg1);
+    width: 100%;
+  }
+
+  .location-map {
+    height: 500px ;
+  }
+
+  .pricing, .hours, .sections, .camping {
+    scroll-margin-top: 0;
+  }
 }
