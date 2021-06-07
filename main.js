@@ -141,3 +141,28 @@ document.getElementById('hours-select').addEventListener('change', function() {
     fillHours(cMonth);
  
 });
+
+
+//close hamburger menu on selection
+var checkbox = document.getElementById('toggle');
+
+document.getElementById('homelink').addEventListener('click', function() {
+        checkbox.checked = false;
+});
+
+document.getElementById('priceslink').addEventListener('click', function() {
+    checkbox.checked = false;
+});
+
+document.getElementById('hourslink').addEventListener('click', function() {
+    checkbox.checked = false;
+});
+
+document.getElementById('sectionslink').addEventListener('click', function() {
+    checkbox.checked = false;
+});
+
+document.getElementById('moreinfolink').addEventListener('click', function() {
+    checkbox.checked = false;
+});
+
