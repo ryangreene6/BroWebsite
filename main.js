@@ -132,6 +132,7 @@ function fillHours(monthObj) { //fills html table with data from month object
 //set hours based on current month, on load
 window.onload = fillHours(getMonthObj(getCurrMonthNum()));
 window.onload = getMonthOpt(getCurrMonthNum()).selected = 'selected';
+//
 
 //fill table with selected hours when select box is changed
 document.getElementById('hours-select').addEventListener('change', function() {
@@ -141,7 +142,7 @@ document.getElementById('hours-select').addEventListener('change', function() {
     fillHours(cMonth);
  
 });
-
+//
 
 //close hamburger menu on selection
 var checkbox = document.getElementById('toggle');
@@ -165,4 +166,4 @@ document.getElementById('sectionslink').addEventListener('click', function() {
 document.getElementById('moreinfolink').addEventListener('click', function() {
     checkbox.checked = false;
 });
-
+//
